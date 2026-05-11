@@ -1,13 +1,3 @@
-z---
-title: AI Smart City Dashboard
-emoji: 🌆
-colorFrom: blue
-colorTo: green
-sdk: streamlit
-app_file: dashboard/app.py
-pinned: false
----
-
 # 🌆 AI Smart City Intelligence System
 
 ## 📌 Project Overview
