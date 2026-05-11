@@ -232,4 +232,4 @@ with gr.Blocks(title="AI Smart City Traffic Dashboard") as demo:
 
 
 if __name__ == "__main__":
-    demo.launch(server_name="127.0.0.1", share=False)
+    demo.launch(server_name="127.0.0.1", share=True)
