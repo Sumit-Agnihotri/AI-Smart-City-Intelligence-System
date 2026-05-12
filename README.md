@@ -176,6 +176,30 @@ Heatmap showing traffic intensity distribution.
 
 ---
 
+## ⚙️ PySpark Pipeline
+
+The repository now includes a local-first PySpark pipeline in `pyspark_pipeline/` that can:
+
+- clean the raw traffic CSV
+- create lag and rolling-window features
+- export a feature table
+- train Spark ML regression and congestion models
+- save a JSON run summary for reproducibility
+
+### Why it helps
+
+This pipeline gives the project a more professional and scalable data-processing layer. It reduces manual preprocessing work, makes the feature-generation step reproducible, and prepares the codebase for larger traffic datasets if the project is extended later. It also strengthens the academic value of the project because you can show both a normal Python-based workflow and a Spark-based big-data workflow, which is useful for report writing, viva questions, and future deployment work.
+
+Run it with:
+
+```bash
+python -m pyspark_pipeline.traffic_pipeline
+```
+
+Use `--no-models` if you only want feature generation.
+
+---
+
 # 🏗️ Project Architecture
 
 ```text

@@ -1,0 +1,31 @@
+{
+  "input_path": "D:\\AI Smart City Intelligence System\\data\\raw_traffic.csv",
+  "row_count": 48024,
+  "junction_count": 4,
+  "date_min": "2015-11-02T05:30:00",
+  "date_max": "2017-07-01T04:30:00",
+  "train_rows": 38419,
+  "test_rows": 9605,
+  "feature_output": "D:\\AI Smart City Intelligence System\\data\\spark_traffic_features.csv",
+  "feature_output_format": "pandas_csv_fallback",
+  "feature_output_warning": "Spark filesystem writes skipped because HADOOP_HOME is not configured on Windows.",
+  "native_spark_writes_available": false,
+  "regression": {
+    "rmse": 6.617651924936783,
+    "mae": 3.7575068130810187,
+    "r2": 0.9408276086237696,
+    "mse": 43.793316999619506,
+    "model_path": "D:\\AI Smart City Intelligence System\\models\\spark\\regression",
+    "model_saved": false,
+    "model_save_error": "Spark model persistence skipped because HADOOP_HOME is not configured on Windows."
+  },
+  "classification": {
+    "accuracy": 0.9728266527850078,
+    "f1": 0.9712433023399218,
+    "weighted_precision": 0.9724146066681447,
+    "weighted_recall": 0.9728266527850078,
+    "model_path": "D:\\AI Smart City Intelligence System\\models\\spark\\classification",
+    "model_saved": false,
+    "model_save_error": "Spark model persistence skipped because HADOOP_HOME is not configured on Windows."
+  }
+}
